@@ -26,7 +26,10 @@ html, body {
 .welcome{
   width: 75%;
   margin: 0 auto;
-  padding-top: 2rem;
+  /*padding-top: 2rem;  */
+}
+#skills{
+  background-image: url('img/back3.jpg');
 }
 .welcome hr{
   border-top: 2px solid #b4b4b4;
@@ -41,6 +44,16 @@ html, body {
 .proj-image img{
   height: 100%;
   width: 100%;
+}
+.display-4{
+  font-weight: 400;
+}
+.intro{
+  
+  overflow-wrap: break-word;
+  border-radius: 15px;
+  box-shadow: -5px -5px 8px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(86, 196, 196);
+  padding: 0%;
 }
 
 /*---Media Queries --*/
@@ -111,6 +124,7 @@ figure {
   height: 100%;
   margin: 0!important;
   color: #eee;
+  background-position: center center;
 }
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
@@ -135,7 +149,7 @@ figure {
   will-change: transform;
 }
 .intro{
-  padding: 10%;
+  padding: 0; /*10%;*/
   margin: 5%;
   /*border:  1px solid yellow ;  */
 }
@@ -188,3 +202,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
 */
 
 
+.skillSet{
+  height:100px;
+  width: 100px;
+}
+.card{
+  background-color:white;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px
+}
