@@ -2,345 +2,232 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Aditi Nadig</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    
-	<link rel="stylesheet" href="imagehover.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Nadig</title>
+    <!--Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Project Image css library -->    
+    <link rel="stylesheet" href="imagehover.min.css">
+    <!--jQuery CDN-->    
+<!--     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+-->
+    <!--fontawesome CDN-->
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--Custom CSS stylesheet-->
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="nav">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src=""></a>
-		<!-- Navbar icon on top right-->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Home</a>
-				</li>				
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<!-- <li class="nav-item">
-					<a class="nav-link" href="#resume">Resume</a>
-				</li> -->
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<!--About Section-->
-<!--- Fixed background -->
-
-<figure>
-    <div class="container-fluid">
-        <div class="fixed-wrap">
-            <div id="fixed">            
-                <div class="row padding intro">
-                    <div class="col-lg-3">
-                        <img src="img/headshot1.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6">
-                        <h1>Aditi Nadig</h1>
-                        <h2><span class= "ityped"></span> Developer</h2>
-						<p>Passionate about turning ideas to reality!</p>
-						<h4>(437) 994-5213 <br> Richmond Hill, ON <br> <a style="color:#e7cb2d!important; font-family: 'Crete Round', serif;" href="mailto:aditi.nadig10@gmail.com">aditi.nadig10@gmail.com</a></h4>
-						<a href="https://github.com/Aditi-SA" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-						<a href="https://www.linkedin.com/in/aditi-n-53353370/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-
-			        </div>
-                </div>
+    <!-- Navbar-->   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Aditi Nadig</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>				
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="Portfolio Web Developer-Aditi Nadig.pdf">Resume</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</figure>
+    </nav>       
 
-<!--
-<figure>
-<div id="parallax-image">                       
-        <div class="row padding">
-            <div class="col-lg-6">
-                <img src="img/headshot1.jpg" class="img-fluid">
+    <section class="content">
+    
+        <!-- <img src="img/intro1.jpg" class="img-fluid" style="opacity: 1;"> -->
+        <div class="container-fluid  parallax-image " id="home">            
+            <div class="row intro ">            
+                <div class="col-lg-12 ">
+                    <img src="img/headshot1.jpg" class="img-fluid">
+                </div>
             </div>
-            <div class="col-lg-6">
-                <h2>If you build it...</h2>
-                <p>Column automatically stacks up on another when screen is less than 576px wide</p>
-                <p>Displays web page differently based on size of the viewing device or screen size.</p>
-                <br>
-                <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="row intro">  
+                <div class="col-lg-12">
+                    <h1 class="font-weight-bold">Aditi Nadig</h1>                    
+                    <h2><span class= "ityped"></span> Developer</h2>
+                    <a href="https://github.com/Aditi-SA" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/aditi-n-53353370/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="mailto:someone@example.com" target="_blank"> <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                </div> 
+            </div>          
+        </div>
+
+        
+            <!--Skills-->
+            <div id="skills" class="container-fluid clearfix">
+                <div class="col-12">
+                    <h2 class="text-center">SKILLS</h2>
+                </div>
+                <section class="section scrollspy">
+                    <div class="container">
+                        <div class="card border-primary">
+                            <div class="card-content text-primary">
+                                <h4 class="text-primary">FRONT END</h4>
+                                <div class="row text-center">
+                                    <div class="col s4 m2"><img alt="" src="img/html5.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/css3.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/Bootstrap-Logo.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/js.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/jquery.png" class="skillSet"></div>						
+                                    <div class="col s4 m2"><img alt="" src="img/react.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/nodejs.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/express.png" class="skillSet"></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card border-primary">
+                            <div class="card-content text-primary">
+                                <h4 class="text-primary">BACK END</h4>
+                                <div class="row text-center">
+                                    <div class="col s4 m2"><img alt="" src="img/mysql.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/mongodb.jpg" class="skillSet"></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card border-primary">
+                            <div class="card-content text-primary">
+                                <h4 class="text-primary ">OTHER</h4>
+                                <div class="row text-center">
+                                    <div class="col s4 m2"><img alt="" src="img/github.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/heroku.png" class="skillSet"></div>
+                                    <div class="col s4 m2"><img alt="" src="img/PTC.png" class="skillSet"></div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>            
+        
+
+        <!--Projects-->
+    <div id="projects" class="container-fluid">
+        <div class="col-12">
+            <h2 class="text-center">PROJECTS</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="imghvr-fold-left proj-image">
+                        <img src="img/giftastic.jpg" alt="GifTastic">
+                        <figcaption>
+                            <p>GifTastic
+                                <hr>
+                                    <li>Javascript</li> 
+                                    <li>JQuery</li> 
+                                    <li>AJAX</li> 
+                                    <li>API Giphy</li>
+                                </p>                     
+                            </figcaption>
+                            <a href="https://github.com/Aditi-SA/GifTastic" target="_blank"></a>                        
+                    </figure>			
+                </div>			
+                <div class="col-md-4">
+                    <figure class="imghvr-fold-left proj-image">
+                        <img src="img/burger1.jpg" alt="BurgerApp">
+                        <figcaption>
+                            <p>Burger Application
+                                <hr>
+                                <li>MySQL</li> 
+                                <li>Node</li> 
+                                <li>Express</li> 
+                                <li>Handlebars</li>
+                                </p>                     
+                            </figcaption>
+                            <a href="https://desolate-cliffs-89269.herokuapp.com/" target="_blank"></a>                        
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="imghvr-fold-left proj-image">
+                        <img src="img/charts.jpg" alt="DataSense" >
+                        <figcaption>
+                            <p>DataSense
+                                <hr>
+                                <li>MERN</li> 
+                                </p>                     
+                            </figcaption>
+                            <a href="https://data--sense.herokuapp.com/" target="_blank"></a>                        
+                    </figure>			
+                </div>			
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="imghvr-fold-left proj-image">
+                        <img src="img/marvel1.jpg" alt="Superhero">
+                        <figcaption>
+                            <p>Superhero Showdown
+                                <hr>
+                                    <li>HTML5</li> 
+                                    <li>CSS3</li> 
+                                    <li>Javascript</li> 
+                                    <li>jQuery</li>
+                                    <li>Firebase</li>
+                                </p>                     
+                            </figcaption>
+                            <a href="https://aditi-sa.github.io/SUPERHERO_SHOWDOWN/" target="_blank"></a>                        
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="imghvr-fold-left proj-image">
+                        <img src="img/harryPotter.jpg" alt="BurgerApp">
+                        <figcaption>
+                            <p>HarryPotter Trivia
+                                <hr>
+                                    <li>JavaScript</li> 
+                                    <li>jQuery</li> 
+                                    <li>Timer</li>							
+                                </p>                     
+                            </figcaption>
+                            <a href="aditi-sa.github.io/triviagame/" target="_blank"></a>                        
+                    </figure>
+                    
+                </div>
+                <div class="col-md-4">
+                    <figure class="imghvr-fold-left proj-image">
+                        <img src="img/bamazon.jpg" alt="BurgerApp">
+                        <figcaption>
+                            <p>Bamazon - a CLI store front
+                                <hr>
+                                    <li>MySQL</li> 
+                                    <li>Node</li> 
+                                    <li>CLI application</li>							
+                                </p>                     
+                            </figcaption>
+                            <a href="https://github.com/Aditi-SA/Bamazon" target="_blank"></a>                        
+                    </figure>
+                </div>
+            </div>
+        </div>    
     </div>
-</figure>
--->
-<!--- Welcome Section -->
-
-<div id='skills' class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">SKILLS</h1>
-			<hr>
-		</div>
-	</div>
-	<section class="section scrollspy">
-           
-		<div class="container">
-			<div class="card border-primary">
-				<div class="card-content text-primary">
-					<h4 class="text-primary">FRONT END</h4>
-					<div class="row text-center">
-						<div class="col s4 m2"><img alt="" src="img/html5.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/css3.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/Bootstrap-Logo.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/js.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/jquery.png" class="skillSet"></div>						
-						<div class="col s4 m2"><img alt="" src="img/react.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/nodejs.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/express.png" class="skillSet"></div>
-					  </div>
-				</div>
-			</div>
-		   
-
-			<div class="card border-primary">
-				<div class="card-content text-primary">
-					<h4 class="text-primary">BACK END</h4>
-					<div class="row text-center">
-						<div class="col s4 m2"><img alt="" src="img/mysql.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/mongodb.jpg" class="skillSet"></div>
-					</div>
-				</div>
-			</div>
-		  
-			<div class="card border-primary">
-				<div class="card-content text-primary">
-					<h4 class="text-primary ">OTHER</h4>
-					<div class="row text-center">
-						<div class="col s4 m2"><img alt="" src="img/github.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/heroku.png" class="skillSet"></div>
-						<div class="col s4 m2"><img alt="" src="img/PTC.png" class="skillSet"></div>
-					   
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!--	<div class="row text-left">
-		<div class="col-xs-12 col-sm-4 col-md-3">
-			<ul class="list-group list-group-flush">FrontEnd:
-				<li class="list-group-item">HTML5</li>
-				<li class="list-group-item">CSS3</li>
-				<li class="list-group-item">Javascript</li>
-				<li class="list-group-item">jQuery</li>
-				<li class="list-group-item">Bootstrap4</li>
-			</ul>
-		</div>
-		<div class="col-xs-12 col-sm-4 col-md-3">
-			<ul class="list-group list-group-flush">Backend
-				<li class="list-group-item">Node</li>
-				<li class="list-group-item">NPM</li>
-				<li class="list-group-item">Express</li>
-			</ul>
-		</div>
-		<div class="col-xs-12 col-sm-4 col-md-3">
-			<ul class="list-group list-group-flush">Database:
-				<li class="list-group-item">MongoDb</li>
-				<li class="list-group-item">MySQL</li>				
-			</ul>
-		</div>	
-		<div class="col-xs-12 col-sm-4 col-md-3">
-			<ul class="list-group list-group-flush">Tools
-				<li class="list-group-item">Github</li>
-				<li class="list-group-item">PTC Integrity</li>				
-			</ul>
-		</div>	
-	</div>	
-</div>
--->
-
-<hr class="my-4">
+ 
+    </section>
   
-<!--- Meet the team -->     <!--AN: rename for projects -->
-<div class="container-fluid padding" id='projects'>
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Projects</h1>
-		</div>
-		<hr>
-	</div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid padding projectView">
-	<div class="row padding">
-		
-		<div class="col-md-4">
-			<figure class="imghvr-fold-left proj-image">
-				<img src="img/giftastic.jpg" alt="GifTastic">
-				<figcaption>
-					<p>GifTastic
-						<hr>
-							<li>Javascript</li> 
-							<li>JQuery</li> 
-							<li>AJAX</li> 
-							<li>API Giphy</li>
-						</p>                     
-					</figcaption>
-					<a href="https://github.com/Aditi-SA/GifTastic" target="_blank"></a>                        
-			</figure>			
-		</div>
-		
-		<div class="col-md-4">
-			<figure class="imghvr-fold-left proj-image">
-				<img src="img/burger.png" alt="BurgerApp">
-				<figcaption>
-					<p>Burger Application
-						<hr>
-						<li>MySQL</li> 
-						<li>Node</li> 
-						<li>Express</li> 
-						<li>Handlebars</li>
-						</p>                     
-					</figcaption>
-					<a href="https://desolate-cliffs-89269.herokuapp.com/" target="_blank"></a>                        
-			</figure>
-		</div>
-
-		<div class="col-md-4">
-			<figure class="imghvr-fold-left proj-image">
-				<img src="img/burger.png" alt="DataSense" >
-				<figcaption>
-					<p>DataSense
-						<hr>
-						<li>MERN</li> 
-						</p>                     
-					</figcaption>
-					<a href="https://desolate-cliffs-89269.herokuapp.com/" target="_blank"></a>                        
-			</figure>			
-		</div>
-		
-	</div>
-	<div class="row padding">
-		<div class="col-md-4">
-			<figure class="imghvr-fold-left proj-image">
-				<img src="img/marvel1.jpg" alt="Superhero">
-				<figcaption>
-					<p>Superhero Showdown
-						<hr>
-							<li>HTML5</li> 
-							<li>CSS3</li> 
-							<li>Javascript</li> 
-							<li>jQuery</li>
-							<li>Firebase</li>
-						</p>                     
-					</figcaption>
-					<a href="https://aditi-sa.github.io/SUPERHERO_SHOWDOWN/" target="_blank"></a>                        
-			</figure>
-		</div>
-
-		<div class="col-md-4">
-			<figure class="imghvr-fold-left proj-image">
-				<img src="img/harryPotter.jpg" alt="BurgerApp">
-				<figcaption>
-					<p>HarryPotter Trivia
-						<hr>
-							<li>JavaScript</li> 
-							<li>jQuery</li> 
-							<li>Timer</li>							
-						</p>                     
-					</figcaption>
-					<a href="https://desolate-cliffs-89269.herokuapp.com/" target="_blank"></a>                        
-			</figure>
-			
-		</div>
-		<div class="col-md-4">
-			<figure class="imghvr-fold-left proj-image">
-				<img src="img/bamazon.jpg" alt="BurgerApp">
-				<figcaption>
-					<p>Bamazon - a CLI store front
-						<hr>
-							<li>MySQL</li> 
-							<li>Node</li> 
-							<li>CLI application</li>							
-						</p>                     
-					</figcaption>
-					<a href="https://desolate-cliffs-89269.herokuapp.com/" target="_blank"></a>                        
-			</figure>
-		</div>
-	</div>
-</div>
-<hr class="my-4">
-
-
-<!--- Two Column Section -->
-<!-- try here
-
-<div class="col s12 m6 l4">
-	<div class="card medium">
-		<div class="card-image waves-effect waves-block waves-light">
-			<img alt="GifTastic" src="assets/images/giftastic.PNG" class="activator">
-		</div>
-		<div class="card-content">
-			<span class="card-title activator nightfall hoverline">GifTastic Scandinavia
-				<i class="fas fa-chevron-circle-down nightfall"></i>
-			</span>
-			<p>Animated GIF generator that uses dynamically generated HTML and shows understanding
-				of AJAX API calls</p>
-		</div>
-		<div class="card-reveal">
-			<span class="card-title brown-text">Accomplishments
-				<i class="fas fa-window-close"></i></span>
-			<ul>
-				<li>Dynamically generated buttons</strong></li>
-				<li>Ajax</li>
-				<li>Giphy API</li>
-			</ul>
-			<div class="card-action"><a aria-label="Visit GifTatic Scandinavia Website" href="https://fearhad.github.io/gifTastic/"
-					target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light tooltipped">
-					<i class="fas fa-external-link-square-alt"></i>
-				</a>
-				<a aria-label="Visit the GitHub repo for GifTastic Scandinavia project" href="https://github.com/Fearhad/gifTastic"
-					target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light tooltipped">
-					<i class="fab fa-github"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>-->
-
-<!--- Connect -->
-
-
-<!--- Footer -->
-<footer>
-	<div class="container-fluid">		
-		<p class="text-center">Aditi-N <i class="fa fa-copyright" aria-hidden="true"></i> 2020</p>			
-	</div>
-</footer>
-
-<script src="itypeindex.js"></script>
-<script>
-	ityped.init(document.querySelector(".ityped"), {
-		showCursor: true,
-		strings: ['Web', 'Front End', 'Full Stack']
-	})
-</script>
-
+    
+    <script src="itypeindex.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!--Custom js file-->
+    <script src="index.js"> </script>
+   
+    <!--Bootstrap js CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
-

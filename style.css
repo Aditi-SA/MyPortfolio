@@ -1,214 +1,199 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-style: 'poppins', sans-serif;
-  color: #222;
-  /*background-color: #c7f3e4;*/  
-}
-.navbar{
-  padding: 0.8rem;
-  background-image: url('img/back2.jpg');
-}
-.navbar-nav li {
-  padding: 20px;
-}
-.nav-link {
-  font-size: 1.1em !important;  
-  font-weight: bolder;
-}
-.padding{
-  padding-bottom: 2rem;
-}
-.welcome{
-  width: 75%;
-  margin: 0 auto;
-  /*padding-top: 2rem;  */
-}
-#skills{
-  background-image: url('img/back3.jpg');
-}
-.welcome hr{
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
-}
-.proj-image{
-  height: 350px;  
-  overflow: hidden;
-}
-.proj-image img{
-  height: 100%;
-  width: 100%;
-}
-.display-4{
-  font-weight: 400;
-}
-.intro{
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    scroll-behavior: smooth;
   
-  overflow-wrap: break-word;
-  border-radius: 15px;
-  box-shadow: -5px -5px 8px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(86, 196, 196);
-  padding: 0%;
 }
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-  /*
-  .social a{
-    font-size: 4em;
-    padding: 2rem;    
-  }*/
-  }
-@media (max-width: 768px) {
-  .intro {
-       top: 45%;   
-  }
-  .intro h1 {
-    font-size: 350%;
-    text-shadow: 1px 1px 15px #000;
-  }
-  .intro h3 {
-    font-size: 140%;
-    font-weight: 400;    
-    padding-bottom: 0.2rem;
-  }
- .display-4{
-    font-size: 200%;    
-  }
-}
-@media (max-width: 576px) {
-  .intro {
-    top: 40%;   
-  }
-  .intro h1 {
-  font-size: 250%;
-  text-shadow: 1px 1px 15px #000;
-  }
-  .intro h3 {
-  font-size: 110%;
-  }
-  .display-4{
-    font-size: 160%;    
-  }
-}
-
-
-/*---Firefox Bug Fix --*/
-/*
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
+body{
+    font-style: 'poppins', sans-serif;
+}/*
+#home{
+    width: 100%;
+    height: 100vh;
+    color: white;  
+    background: url('img/intro1.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: justify;
 }*/
-/*
-#parallax-image{
-  background-image: url('img/back2.jpg');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /*shorthand = background: center center cover no-repeat fixed;*/
+.parallax-image{    
+    height: 100vh;
+    color: whitesmoke;
+    margin: 0;
+    /*parallax effect*/
+    background: url('img/intro3.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 
-}*/
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0!important;
-  color: #eee;
-  background-position: center center;
+    
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*
+    display: table;
+    vertical-align: middle;    */    
 }
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/back2.jpg');
-  position: fixed;
-  display: block;
-  top: auto;  /* 0 */
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-.intro{
-  padding: 0; /*10%;*/
-  margin: 5%;
-  /*border:  1px solid yellow ;  */
-}
-.intro h1{
-  text-shadow: 1px 1px 15px #000;
+.intro{    
+    color: ivory;    
+    text-align: center;
+    /*border-radius: 15px;*/
+    /*box-shadow: -5px -5px 8px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(86, 196, 196);    */
 }
 .intro img{
-  border-radius: 35%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;   
 }
-/*--- Bootstrap Padding Fix --*/
+.intro a{
+    padding: 20px;
+    color: yellow;
+    margin-top: 15px;
+}
+
+.transparentLook ul{
+    background-color: white;
+}
+
+.ityped-cursor {    
+    opacity: 0;   
+}
+li .nav-link{    
+    color: yellowgreen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+nav ul li a:hover{    
+    color: orange;    
+}
+
+#skills, #projects{
+    padding-top: 40px;
+    padding-bottom: 0;
+    height: 100vh ;
+    color: yellowgreen;
+   /* background: url('img/back5.jpg');    
+    background-attachment: fixed;*/
+}
+#skills card{
+    padding: auto;
+}/*
+#projects{
+    background: url(/img/back2.jpg);
+    background-attachment: fixed;
+}*/
+.skillSet{
+    height: 80px;
+    width: 80px;
+}
+.card{
+    background-color:white;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px
+}
+/*project card*/
+.proj-image{
+    height: 250px;  
+    overflow: hidden;
+    /*background-color: rgb(80, 191, 235);*/    
+}
+.proj-image img{
+    height: 100%;
+    width: 100%;
+}
+
+ 
+ /*
+header{    
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: url(img/back3.jpg) no-repeat 50% 50%;
+    /*background-size: cover;*/
+    /*background-attachment: fixed;    
+}*/
+/*
+nav{
+    width: 100%
+}
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0);;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul{
+    background: #000;;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+*/
+
+/*
+.nav-link {
+    font-size: 1.1em !important;  
+    font-weight: bolder;
+  }
+
+#home, #skills, #projects{
+    min-height: 100vh;
+    width: 100%;    
+}
+#skills{
+    background: url('img/back2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}*/
+/*
+.intro-outer{
+   /* background: url("img/back2.jpg");*/
+   /* background-size: cover;
+    display: table;
+    vertical-align: middle;
+    margin: 30px;
+}
+.intro-inner{
+    color: ivory;  
+    overflow-wrap: break-word;
+    border-radius: 15px;
+    box-shadow: -5px -5px 8px 2px rgb(255, 255, 255), 4px 4px 10px 2px rgb(86, 196, 196);    
+    margin: 10%;
+  }
+.intro-inner img{   
+    border-radius: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.intro-inner h1{
+    text-shadow: 1px 1px 15px #000;
+}*/
+
+
+
+  /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
 }
-.fa-github{
-  color: #211F1F;
-  background-color: white;
-  padding: 0.5vh;
-}
-.fa-linkedin{
-  color: #2867B2;
-  background-color: white;
-  padding: 0.5vh;
-}
-.fa-github:hover, .fa-linkedin:hover{
-  color: #d5d5d5;
-  border-radius: 100%;
-}
-
-footer{
-  background-color: #3f3f3f;
-  color: #d5d5d5;  
-}
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-.skillSet{
-  height:100px;
-  width: 100px;
-}
-.card{
-  background-color:white;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 20px
-}
+clearfix:after,
+clearfix:before {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
